@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title', 'Juego')
+
+@section('nav-game', 'active')
+
 @section('content')
 <div class="container">
     <div class="row">
@@ -9,7 +13,7 @@
                 <div class="panel-body" id="panel-body">
                     <div id="panel_iniciar" class="col-xs-12">
                         <div class="text-center">
-                            <a href="#" id="btn_init" class="btn btn-primary btn-large" >Inicar Juego</a>
+                            <button id="btn_init" onClick="initgame(this)" class="btn btn-primary btn-large" >Inicar Juego</button>
                         </div>
                     </div>
                     <div id="init_juego" hidden>
@@ -19,10 +23,14 @@
                                 ROJO
                             </p>
                         </div>
-                        <div class="col-xs-12 text-center">
-                            <a href="#" class="btn" style="padding: 4em; background-color: red;"></a>
-                            <a href="#" class="btn" style="padding: 4em; background-color: blue;"></a>
-                            <a href="#" class="btn" style="padding: 4em; background-color: green;"></a>
+                        <div class="col-xs-12 text-center" id="respuesta_color">
+                        </div>
+                    </div>
+                    <div id="panel_califica" class="col-xs-12" hidden>
+                        <div class="text-center">
+                            <p id="califaca">
+                            </p>
+                            <button id="btn_init" onClick="initgame(this)" class="btn btn-primary btn-large" >Nuevo Juego</button>
                         </div>
                     </div>
 
@@ -30,5 +38,8 @@
             </div>
         </div>
     </div>
+</div>
+<div id="data">
+    
 </div>
 @endsection

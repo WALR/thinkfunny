@@ -12,6 +12,7 @@
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Scripts -->
     <script>
@@ -43,6 +44,7 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
+                        <li class="@yield('nav-game')"><a href="{{ url('/') }}">Juego</a></li>
                         <li class="@yield('nav-pregunta')"><a href="{{ route('preguntas.index') }}">Preguntas</a></li>
                         <li class="@yield('nav-color')"><a href="{{ route('colores.index') }}">Colores</a></li>
                     </ul>

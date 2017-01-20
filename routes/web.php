@@ -18,6 +18,7 @@
 Auth::routes();
 
 Route::get('/', 'HomeController@index');
+Route::get('/home', 'HomeController@index');
 
 Route::get('perfil', 'UserController@perfil');
 Route::post('perfil', 'UserController@update_perfil');
