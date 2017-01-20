@@ -14,25 +14,6 @@ if ('serviceWorker' in navigator) {
 
 
 // GAME
-// var colores = {};
-// var preguntas = {};
-
-// $.ajax({
-//     url: "api/colores",
-//     async: false,
-//     dataType: 'json',
-//     success: function(data) {
-//         colores = data;
-//     }
-// });
-// $.ajax({
-//     url: "api/preguntas",
-//     async: false,
-//     dataType: 'json',
-//     success: function(data) {
-//         preguntas = data;
-//     }
-// });
 
 // Function to perform HTTP request
 var get = function(url) {
@@ -56,44 +37,6 @@ var get = function(url) {
 
   }); 
 };
-
-// get('api/preguntas')
-//   .then(function(response) {
-//   	console.log(response);
-//   	preguntas = response;
-//   })
-//   .catch(function(err) {
-//     console.log("Error", err);
-//   })
-
-// get('api/colores')
-//   .then(function(response) {
-//   	console.log(response);
-//   	colores = response;
-//   })
-//   .catch(function(err) {
-//     console.log("Error", err);
-//   })
-
-// function getData(){
-// 	get('api/preguntas')
-// 	  .then(function(response) {
-// 	  	console.log(response);
-// 	  	preguntas = response;
-// 	  })
-// 	  .catch(function(err) {
-// 	    console.log("Error", err);
-// 	  })
-
-// 	get('api/colores')
-// 	  .then(function(response) {
-// 	  	console.log(response);
-// 	  	colores = response;
-// 	  })
-// 	  .catch(function(err) {
-// 	    console.log("Error", err);
-// 	  })
-// }
 
 
 var pregunta;
